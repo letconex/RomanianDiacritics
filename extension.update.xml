@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="https://openoffice.org/extensions/update/2006"
+  xmlns:xlink="https://www.w3.org/1999/xlink">
+	<identifier value="org.openoffice.legacy.extension.oxt"/>
+	<version value="1.1.2" />
+	<update-download>
+		<src xlink:href="https://github.com/letconex/RomanianDiacritics/blob/main/latest.oxt" />
+	</update-download>
+</description>
