@@ -1,0 +1,5 @@
+Fügt rumänische Schriftzeichen mit diakritischen Zeichen durch die Nutzung der Maus ein, ersetzt die ș/Ș und ț/Ț Zeichen mit Komma darunter durch ihre Entsprechungen mit Cedille darunter (oder umgekehrt), ersetzt alle rumänischen Schriftzeichen mit diakritischen Zeichen durch Standard ASCII-Zeichen.
+
+Extension für LibreOffice/OpenOffice, GPLv3 Lizenz.
+Versionen 1.0.0-1.1.2 veröffentlicht auf https://extensions.openoffice.org/en/project/romanian-diacritics
+Versionen 1.1.0-1.1.1 veröffentlicht auf https://www.secarica.ro/en/rou/librarydiacritice

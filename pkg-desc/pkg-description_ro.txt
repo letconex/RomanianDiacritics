@@ -1,0 +1,5 @@
+Inserează caracterele românești cu diacritice folosind mausul, înlocuiește caracterele ș/Ș și ț/Ț cu virgulă dedesubt folosind cele echivalente cu sedilă dedesubt sau viceversa, înlocuiește toate caracterele românești cu diacritice folosind caractere ASCII standard.
+
+Extensie pentru LibreOffice/OpenOffice, licență GPLv3.
+Versiunile 1.0.0-1.1.2 publicate pe https://extensions.openoffice.org/en/project/romanian-diacritics
+Versiunile 1.1.0-1.1.1 publicate pe https://www.secarica.ro/ro/rou/librarydiacritice

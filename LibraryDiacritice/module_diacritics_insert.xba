@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="module_diacritics_insert" script:language="StarBasic">
+
+sub Insertabreve
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "ă"
+ dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub InsertAcapsbreve
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "Ă"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub Insertacircumflex
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "â"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub InsertAcapscircumflex
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "Â"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub Inserticircumflex
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "î"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub InsertIcapscircumflex
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "Î"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub Insertscommabelow
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "ș"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub InsertScapscommabelow
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "Ș"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub Inserttcommabelow
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "ț"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+sub InsertTcapscommabelow
+  dim document   as object
+  dim dispatcher as object
+  document   = ThisComponent.CurrentController.Frame
+  dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+  dim args1(0) as new com.sun.star.beans.PropertyValue
+  args1(0).Name = "Text"
+  args1(0).Value = "Ț"
+  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
+end sub
+
+</script:module>

@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data
+    xmlns:oor="http://openoffice.org/2001/registry"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    oor:name="Addons"
+    oor:package="org.openoffice.Office">
+    <node oor:name="AddonUI">
+        <node oor:name="OfficeToolBar">
+            <node oor:name="LibraryDiacritice.OfficeToolBar" oor:op="replace">
+
+                <node oor:name="m01" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Insertabreve?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>ă</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m02" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertAcapsbreve?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>Ă</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m03" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Insertacircumflex?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>â</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m04" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertAcapscircumflex?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>Â</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m05" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Inserticircumflex?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>î</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m06" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertIcapscircumflex?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>Î</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m07" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Insertscommabelow?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>ș</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m08" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertScapscommabelow?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>Ș</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m09" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Inserttcommabelow?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>ț</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m10" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertTcapscommabelow?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>Ț</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m11" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>private:separator</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m12" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value xml:lang="en">Comma bellow → Cedilla below</value>
+                        <value xml:lang="de">Komma darunter → Cedille darunter</value>
+                        <value xml:lang="ro">Virgulă dedesubt → Sedilă dedesubt</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m13" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>private:separator</value>
+                    </prop>
+                </node>
+
+                <node oor:name="m14" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.text.TextDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value xml:lang="en">Cedilla below → Comma bellow</value>
+                        <value xml:lang="de">Cedille darunter → Komma darunter</value>
+                        <value xml:lang="ro">Sedilă dedesubt → Virgulă dedesubt</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+
+            </node>
+        </node>
+
+        <node oor:name="AddonMenu">
+
+            <node oor:name="LibraryDiacritice.AddonMenu.m01" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                    <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                    <value xml:lang="en">Characters with diacritical marks replacement</value>
+                    <value xml:lang="de">Zeichen mit diakritischen Zeichen ersetzen</value>
+                    <value xml:lang="ro">Înlocuire de caractere cu diacritice</value>
+                </prop>
+
+                <node oor:name="Submenu">
+                </node>
+
+            </node>
+
+            <node oor:name="LibraryDiacritice.AddonMenu.m02" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                    <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceDiacritics2ASCII?language=Basic&amp;location=application</value>
+                </prop>
+
+                <prop oor:name="Title" oor:type="xs:string">
+                    <value xml:lang="en">Replace all Romanian diacritics with ASCII</value>
+                    <value xml:lang="de">Alle rumänischen diakritischen Zeichen durch ASCII Zeichen ersetzen</value>
+                    <value xml:lang="ro">Înlocuiește toate diacriticele românești cu caractere ASCII</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                    <value>_self</value>
+                </prop>
+            </node>
+
+            <node oor:name="LibraryDiacritice.AddonMenu.m03" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                    <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                    <value xml:lang="en">Replace Comma bellow with Cedilla below</value>
+                    <value xml:lang="de">Komma darunter durch Cedille darunter ersetzen</value>
+                    <value xml:lang="ro">Înlocuiește virgulele dedesubt cu sedile dedesubt</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                    <value>_self</value>
+                </prop>
+            </node>
+
+            <node oor:name="LibraryDiacritice.AddonMenu.m04" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                    <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                    <value xml:lang="en">Replace Cedilla below with Comma bellow</value>
+                    <value xml:lang="de">Cedille darunter durch Komma darunter ersetzen</value>
+                    <value xml:lang="ro">Înlocuiește sedilele dedesubt cu virgule dedesubt</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                    <value>_self</value>
+                </prop>
+            </node>
+
+        </node>
+    </node>
+</oor:component-data>

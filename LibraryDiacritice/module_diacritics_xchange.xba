@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="module_diacritics_xchange" script:language="StarBasic">
+
+Sub ReplaceDiacritics2ASCII
+
+    Dim numbered(13) As String, accented(13) As String
+    Dim n as long
+    Dim oDoc as object, oReplace as object
+    numbered() = Array("ă", "Ă", "â", "Â", "î", "Î", "ș", "Ș", "ț", "Ț", "ş", "Ş", "ţ", "Ţ",)
+    accented() = Array("a", "A", "a", "A", "i", "I", "s", "S", "t", "T", "s", "S", "t", "T",)
+    oReplace = ThisComponent.createReplaceDescriptor()
+    oReplace.SearchCaseSensitive = True
+    TotalFound = 0
+
+    For n = LBound(numbered()) To UBound(accented())
+        oReplace.SearchString = numbered(n)
+        oReplace.ReplaceString = accented(n)
+        TotalFound = TotalFound + ThisComponent.ReplaceAll(oReplace)
+    Next n
+
+    If not GlobalScope.BasicLibraries.isLibraryLoaded( "Tools" ) Then
+        GlobalScope.BasicLibraries.loadLibrary( "Tools" )
+    End If
+
+    get_OOo_language = GetRegistryKeyContent("org.openoffice.Setup/L10N",FALSE).getByName("ooLocale")
+
+    If TotalFound = 0 Then
+
+        If get_OOo_language = "ro" Then
+            MsgBox ("Nu a fost găsit niciun caracter românesc cu diacritice.", 48)
+        ElseIf get_OOo_language = "de" Then
+            MsgBox ("Es wurden keine rumänischen Zeichen mit diakritischen Zeichen gefunden.", 48)
+        Else
+            MsgBox ("No Romanian character with diacritics were found.", 48)
+        End If
+
+    Else
+
+        If get_OOo_language = "ro" Then
+            MsgBox ("Toate caracterele românești cu diacritice au fost înlocuite cu caractere fără diacritice (ASCII)." + chr(13) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
+        ElseIf get_OOo_language = "de" Then
+            MsgBox ("Alle rumänischen Zeichen mit diakritischen Zeichen wurden durch Zeichen ohne diakritisches Zeichen ersetzt (ASCII)." + chr(13) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
+        Else
+            MsgBox ("All Romanian characters with diacritics were replaced with characters without diacritics (ASCII)."  + chr(13) + chr(13) + "Total characters replaced: " + TotalFound, 64)
+        End If
+
+    End If
+
+End Sub
+
+Sub ReplaceCedilla2Comma
+
+    Dim numbered(3) As String, accented(3) As String
+    Dim n as long
+    Dim oDoc as object, oReplace as object
+    numbered() = Array("ş", "Ş", "ţ", "Ţ")
+    accented() = Array("ș", "Ș", "ț", "Ț")
+    oReplace = ThisComponent.createReplaceDescriptor()
+    oReplace.SearchCaseSensitive = True
+    TotalFound = 0
+
+    For n = LBound(numbered()) To UBound(accented())
+        oReplace.SearchString = numbered(n)
+        oReplace.ReplaceString = accented(n)
+        TotalFound = TotalFound + ThisComponent.ReplaceAll(oReplace)
+    Next n
+
+    If not GlobalScope.BasicLibraries.isLibraryLoaded( "Tools" ) Then
+        GlobalScope.BasicLibraries.loadLibrary( "Tools" )
+    End If
+
+    get_OOo_language = GetRegistryKeyContent("org.openoffice.Setup/L10N",FALSE).getByName("ooLocale")
+
+    If TotalFound = 0 Then
+
+        If get_OOo_language = "ro" Then
+            MsgBox ("Nu a fost găsit niciun caracter românesc cu sedilă dedesubt.", 48)
+        ElseIf get_OOo_language = "de" Then
+            MsgBox ("Es wurden keine rumänischen Zeichen mit Cedille darunter gefunden.", 48)
+        Else
+            MsgBox ("No Romanian character with cedilla below were found.", 48)
+        End If
+
+    Else
+
+        If get_OOo_language = "ro" Then
+            MsgBox ("Toate caracterele românești cu sedilă dedesubt au fost înlocuite cu caractere cu virgulă dedesubt." + chr(13) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
+        ElseIf get_OOo_language = "de" Then
+            MsgBox ("Alle rumänischen Zeichen mit Cedille darunter wurden durch Zeichen mit Komma darunter ersetzt." + chr(13) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
+        Else
+            MsgBox ("All Romanian characters with cedilla below were replaced with characters with comma bellow." + chr(13) + chr(13) + "Total characters replaced: " + TotalFound, 64)
+        End If
+
+    End If
+
+End Sub
+
+Sub ReplaceComma2Cedilla
+
+    Dim numbered(3) As String, accented(3) As String
+    Dim n as long
+    Dim oDoc as object, oReplace as object
+    numbered() = Array("ș", "Ș", "ț", "Ț")
+    accented() = Array("ş", "Ş", "ţ", "Ţ")
+    oReplace = ThisComponent.createReplaceDescriptor()
+    oReplace.SearchCaseSensitive = True
+    TotalFound = 0
+
+    For n = LBound(numbered()) To UBound(accented())
+        oReplace.SearchString = numbered(n)
+        oReplace.ReplaceString = accented(n)
+        TotalFound = TotalFound + ThisComponent.ReplaceAll(oReplace)
+    Next n
+
+    If not GlobalScope.BasicLibraries.isLibraryLoaded( "Tools" ) Then
+        GlobalScope.BasicLibraries.loadLibrary( "Tools" )
+    End If
+
+    get_OOo_language = GetRegistryKeyContent("org.openoffice.Setup/L10N",FALSE).getByName("ooLocale")
+
+    If TotalFound = 0 Then
+
+        If get_OOo_language = "ro" Then
+            MsgBox ("Nu a fost găsit niciun caracter românesc cu virgulă dedesubt.", 48)
+        ElseIf get_OOo_language = "de" Then
+            MsgBox ("Es wurden keine rumänischen Zeichen mit Komma darunter gefunden.", 48)
+        Else
+            MsgBox ("No Romanian character with comma below were found.", 48)
+        End If
+
+    Else
+
+        If get_OOo_language = "ro" Then
+            MsgBox ("Toate caracterele românești cu virgulă dedesubt au fost înlocuite cu caractere cu sedilă dedesubt." + chr(13) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
+        ElseIf get_OOo_language = "de" Then
+            MsgBox ("Alle rumänischen Zeichen mit Komma darunter wurden durch Zeichen mit Cedille darunter ersetzt." + chr(13) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
+        Else
+            MsgBox ("All Romanian characters with comma below were replaced with characters with cedilla bellow." + chr(13) + chr(13) + "Total characters replaced: " + TotalFound, 64)
+        End If
+
+    End If
+
+End Sub
+
+</script:module>
