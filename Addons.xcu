@@ -6,14 +6,14 @@
     oor:package="org.openoffice.Office">
     <node oor:name="AddonUI">
         <node oor:name="OfficeToolBar">
-            <node oor:name="LibraryDiacritice.OfficeToolBar" oor:op="replace">
+            <node oor:name="LibraryDiacritics.OfficeToolBar" oor:op="replace">
 
                 <node oor:name="m01" oor:op="replace">
                     <prop oor:name="Context" oor:type="xs:string">
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Insertabreve?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.Insertabreve?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>ă</value>
@@ -28,7 +28,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertAcapsbreve?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.InsertAcapsbreve?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>Ă</value>
@@ -43,7 +43,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Insertacircumflex?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.Insertacircumflex?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>â</value>
@@ -58,7 +58,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertAcapscircumflex?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.InsertAcapscircumflex?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>Â</value>
@@ -73,7 +73,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Inserticircumflex?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.Inserticircumflex?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>î</value>
@@ -88,7 +88,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertIcapscircumflex?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.InsertIcapscircumflex?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>Î</value>
@@ -103,7 +103,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Insertscommabelow?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.Insertscommabelow?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>ș</value>
@@ -118,7 +118,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertScapscommabelow?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.InsertScapscommabelow?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>Ș</value>
@@ -133,7 +133,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.Inserttcommabelow?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.Inserttcommabelow?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>ț</value>
@@ -148,7 +148,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_insert.InsertTcapscommabelow?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_insert.InsertTcapscommabelow?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value>Ț</value>
@@ -172,7 +172,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value xml:lang="en">Comma bellow → Cedilla below</value>
@@ -198,7 +198,7 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
                         <value xml:lang="en">Cedilla below → Comma bellow</value>
@@ -215,7 +215,7 @@
 
         <node oor:name="AddonMenu">
 
-            <node oor:name="LibraryDiacritice.AddonMenu.m01" oor:op="replace">
+            <node oor:name="LibraryDiacritics.AddonMenu.m01" oor:op="replace">
                 <prop oor:name="Context" oor:type="xs:string">
                     <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
                 </prop>
@@ -230,12 +230,12 @@
 
             </node>
 
-            <node oor:name="LibraryDiacritice.AddonMenu.m02" oor:op="replace">
+            <node oor:name="LibraryDiacritics.AddonMenu.m02" oor:op="replace">
                 <prop oor:name="Context" oor:type="xs:string">
                     <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
                 </prop>
                 <prop oor:name="URL" oor:type="xs:string">
-                  <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceDiacritics2ASCII?language=Basic&amp;location=application</value>
+                  <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceDiacritics2ASCII?language=Basic&amp;location=application</value>
                 </prop>
 
                 <prop oor:name="Title" oor:type="xs:string">
@@ -248,12 +248,12 @@
                 </prop>
             </node>
 
-            <node oor:name="LibraryDiacritice.AddonMenu.m03" oor:op="replace">
+            <node oor:name="LibraryDiacritics.AddonMenu.m03" oor:op="replace">
                 <prop oor:name="Context" oor:type="xs:string">
                     <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
                 </prop>
                 <prop oor:name="URL" oor:type="xs:string">
-                    <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
+                    <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
                 </prop>
                 <prop oor:name="Title" oor:type="xs:string">
                     <value xml:lang="en">Replace Comma bellow with Cedilla below</value>
@@ -265,12 +265,12 @@
                 </prop>
             </node>
 
-            <node oor:name="LibraryDiacritice.AddonMenu.m04" oor:op="replace">
+            <node oor:name="LibraryDiacritics.AddonMenu.m04" oor:op="replace">
                 <prop oor:name="Context" oor:type="xs:string">
                     <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
                 </prop>
                 <prop oor:name="URL" oor:type="xs:string">
-                    <value>vnd.sun.star.script:LibraryDiacritice.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
+                    <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
                 </prop>
                 <prop oor:name="Title" oor:type="xs:string">
                     <value xml:lang="en">Replace Cedilla below with Comma bellow</value>
