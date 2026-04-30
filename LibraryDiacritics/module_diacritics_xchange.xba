@@ -2,6 +2,10 @@
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="module_diacritics_xchange" script:language="StarBasic">
 
+' vbCr → Carriage Return only (Chr(13))
+' vbLf → Line Feed only (Chr(10))
+' vbNewLine → Same as vbCrLf in Windows
+
 Sub ReplaceDiacritics2ASCII
 
     Dim numbered(13) As String, accented(13) As String
@@ -12,13 +16,26 @@ Sub ReplaceDiacritics2ASCII
     oReplace = ThisComponent.createReplaceDescriptor()
     oReplace.SearchCaseSensitive = True
     TotalFound = 0
-
-    For n = LBound(numbered()) To UBound(accented())
+    Dim dynArray(0) As String  ' Declare a dynamic array
+    ReDim dynArray(0)          ' Start with an empty array
+    Index = 0
+    
+    For n = LBound(numbered()) To UBound(accented())  
         oReplace.SearchString = numbered(n)
         oReplace.ReplaceString = accented(n)
-        TotalFound = TotalFound + ThisComponent.ReplaceAll(oReplace)
+        TotalFoundChar = ThisComponent.ReplaceAll(oReplace)
+        TotalFound = TotalFound + TotalFoundChar
+        If TotalFoundChar >= 1 Then
+             Index = Index + 1
+             ' MsgBox ("n " & n & " index " & Index & " TotalFoundChar " &  TotalFoundChar & " TotalFound " & TotalFound)
+             ReDim Preserve dynArray(Index) ' Increase array upper bound while preserving contents
+                 If TotalFoundChar > 1 Then
+                     dynArray(Index) = "replaced " & numbered(n) & " with " &  accented(n) & " " &  TotalFoundChar & " times"
+                 Else dynArray(Index) = "replaced " & numbered(n) & " with " &  accented(n) & " " &  TotalFoundChar & " time"
+               End If
+        End If
     Next n
-
+    
     If not GlobalScope.BasicLibraries.isLibraryLoaded( "Tools" ) Then
         GlobalScope.BasicLibraries.loadLibrary( "Tools" )
     End If
@@ -38,11 +55,11 @@ Sub ReplaceDiacritics2ASCII
     Else
 
         If get_OOo_language = "ro" Then
-            MsgBox ("Toate caracterele românești cu diacritice au fost înlocuite cu caractere fără diacritice (ASCII)." + chr(13) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
+            MsgBox ("Toate caracterele românești cu diacritice au fost înlocuite cu caractere fără diacritice (ASCII)." + chr(13) + Join(dynArray, vbLf) + chr(13) + "Total caractere înlocuite: " + TotalFound + dynArray, 64)
         ElseIf get_OOo_language = "de" Then
-            MsgBox ("Alle rumänischen Zeichen mit diakritischen Zeichen wurden durch Zeichen ohne diakritisches Zeichen ersetzt (ASCII)." + chr(13) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
+            MsgBox ("Alle rumänischen Zeichen mit diakritischen Zeichen wurden durch Zeichen ohne diakritisches Zeichen ersetzt (ASCII)." + chr(13) + Join(dynArray, vbLf) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
         Else
-            MsgBox ("All Romanian characters with diacritics were replaced with characters without diacritics (ASCII)."  + chr(13) + chr(13) + "Total characters replaced: " + TotalFound, 64)
+            MsgBox ("All Romanian characters with diacritics were replaced with characters without diacritics (ASCII)." + chr(13) + Join(dynArray,  vbLf) + chr(13) + "Total characters replaced: " + TotalFound, 64)
         End If
 
     End If
@@ -59,11 +76,23 @@ Sub ReplaceCedilla2Comma
     oReplace = ThisComponent.createReplaceDescriptor()
     oReplace.SearchCaseSensitive = True
     TotalFound = 0
-
-    For n = LBound(numbered()) To UBound(accented())
+    Dim dynArray(0) As String  ' Declare a dynamic array
+    ReDim dynArray(0)          ' Start with an empty array
+    Index = 0
+    
+    For n = LBound(numbered()) To UBound(accented())  
         oReplace.SearchString = numbered(n)
         oReplace.ReplaceString = accented(n)
-        TotalFound = TotalFound + ThisComponent.ReplaceAll(oReplace)
+        TotalFoundChar = ThisComponent.ReplaceAll(oReplace)
+        TotalFound = TotalFound + TotalFoundChar
+        If TotalFoundChar >= 1 Then
+             Index = Index + 1
+             ReDim Preserve dynArray(Index) ' Increase array upper bound while preserving contents
+                 If TotalFoundChar > 1 Then
+                      dynArray(Index) = "replaced " & numbered(n) & " with " &  accented(n) & " " &  TotalFoundChar & " times"
+                 Else dynArray(Index) = "replaced " & numbered(n) & " with " &  accented(n) & " " &  TotalFoundChar & " time"
+               End If
+        End If
     Next n
 
     If not GlobalScope.BasicLibraries.isLibraryLoaded( "Tools" ) Then
@@ -85,11 +114,11 @@ Sub ReplaceCedilla2Comma
     Else
 
         If get_OOo_language = "ro" Then
-            MsgBox ("Toate caracterele românești cu sedilă dedesubt au fost înlocuite cu caractere cu virgulă dedesubt." + chr(13) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
+            MsgBox ("Toate caracterele românești cu sedilă dedesubt au fost înlocuite cu caractere cu virgulă dedesubt." + chr(13) + Join(dynArray,  vbLf) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
         ElseIf get_OOo_language = "de" Then
-            MsgBox ("Alle rumänischen Zeichen mit Cedille darunter wurden durch Zeichen mit Komma darunter ersetzt." + chr(13) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
+            MsgBox ("Alle rumänischen Zeichen mit Cedille darunter wurden durch Zeichen mit Komma darunter ersetzt." + chr(13) + Join(dynArray,  vbLf) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
         Else
-            MsgBox ("All Romanian characters with cedilla below were replaced with characters with comma bellow." + chr(13) + chr(13) + "Total characters replaced: " + TotalFound, 64)
+            MsgBox ("All Romanian characters with cedilla below were replaced with characters with comma bellow." + chr(13) + Join(dynArray,  vbLf) + chr(13) + "Total characters replaced: " + TotalFound, 64)
         End If
 
     End If
@@ -106,11 +135,23 @@ Sub ReplaceComma2Cedilla
     oReplace = ThisComponent.createReplaceDescriptor()
     oReplace.SearchCaseSensitive = True
     TotalFound = 0
-
-    For n = LBound(numbered()) To UBound(accented())
+    Dim dynArray(0) As String  ' Declare a dynamic array
+    ReDim dynArray(0)          ' Start with an empty array
+    Index = 0
+    
+    For n = LBound(numbered()) To UBound(accented())  
         oReplace.SearchString = numbered(n)
         oReplace.ReplaceString = accented(n)
-        TotalFound = TotalFound + ThisComponent.ReplaceAll(oReplace)
+        TotalFoundChar = ThisComponent.ReplaceAll(oReplace)
+        TotalFound = TotalFound + TotalFoundChar
+        If TotalFoundChar >= 1 Then
+             Index = Index + 1
+             ReDim Preserve dynArray(Index) ' Increase array upper bound while preserving contents
+                 If TotalFoundChar > 1 Then
+                      dynArray(Index) = "replaced " & numbered(n) & " with " &  accented(n) & " " &  TotalFoundChar & " times"
+                 Else dynArray(Index) = "replaced " & numbered(n) & " with " &  accented(n) & " " &  TotalFoundChar & " time"
+               End If
+        End If
     Next n
 
     If not GlobalScope.BasicLibraries.isLibraryLoaded( "Tools" ) Then
@@ -132,11 +173,11 @@ Sub ReplaceComma2Cedilla
     Else
 
         If get_OOo_language = "ro" Then
-            MsgBox ("Toate caracterele românești cu virgulă dedesubt au fost înlocuite cu caractere cu sedilă dedesubt." + chr(13) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
+            MsgBox ("Toate caracterele românești cu virgulă dedesubt au fost înlocuite cu caractere cu sedilă dedesubt." + chr(13) + Join(dynArray,  vbLf) + chr(13) + "Total caractere înlocuite: " + TotalFound, 64)
         ElseIf get_OOo_language = "de" Then
-            MsgBox ("Alle rumänischen Zeichen mit Komma darunter wurden durch Zeichen mit Cedille darunter ersetzt." + chr(13) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
+            MsgBox ("Alle rumänischen Zeichen mit Komma darunter wurden durch Zeichen mit Cedille darunter ersetzt." + chr(13) + Join(dynArray,  vbLf) + chr(13) + "Gesamtzahl der ersetzten Zeichen: " + TotalFound, 64)
         Else
-            MsgBox ("All Romanian characters with comma below were replaced with characters with cedilla bellow." + chr(13) + chr(13) + "Total characters replaced: " + TotalFound, 64)
+            MsgBox ("All Romanian characters with comma below were replaced with characters with cedilla bellow." + chr(13) + Join(dynArray,  vbLf) + chr(13) + "Total characters replaced: " + TotalFound, 64)
         End If
 
     End If

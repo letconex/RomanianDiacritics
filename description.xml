@@ -9,6 +9,11 @@
         <OpenOffice.org-minimal-version value="2.1" dep:name="OpenOffice.org 2.1"/>
     </dependencies>
     <registration>
+		<simple-license accept-by="user" >
+			<license-text xlink:href="registration/license_en.txt" lang="en" />
+			<license-text xlink:href="registration/license_de.txt" lang="de" />
+			<license-text xlink:href="registration/license_ro.txt" lang="ro" />
+		</simple-license>
     </registration>
 
     <update-information>
