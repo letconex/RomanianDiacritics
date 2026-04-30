@@ -27,7 +27,7 @@ Sub ReplaceDiacritics2ASCII
         TotalFound = TotalFound + TotalFoundChar
         If TotalFoundChar >= 1 Then
              Index = Index + 1
-             ' MsgBox ("n " & n & " index " & Index & " TotalFoundChar " &  TotalFoundChar & " TotalFound " & TotalFound)
+             ' MsgBox ("n " & n & " index " & Index & " TotalFoundChar " & TotalFoundChar & " TotalFound " & TotalFound)
              ReDim Preserve dynArray(Index) ' Increase array upper bound while preserving contents
                  If TotalFoundChar > 1 Then
                      dynArray(Index) = "replaced " & numbered(n) & " with " &  accented(n) & " " &  TotalFoundChar & " times"

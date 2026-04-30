@@ -46,7 +46,7 @@
 
     <icon>
     <default xlink:href="icons/diacritice.png" />
-    <high-contrast xlink:href="icons/diacritice.png" />
+    <high-contrast xlink:href="icons/diacriticehighcontrast.png" />
   </icon>
 
     <platform value="all" />
