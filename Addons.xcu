@@ -172,12 +172,12 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
-                        <value xml:lang="en">Comma bellow → Cedilla below</value>
-                        <value xml:lang="de">Komma darunter → Cedille darunter</value>
-                        <value xml:lang="ro">Virgulă dedesubt → Sedilă dedesubt</value>
+                        <value xml:lang="en">Cedilla → Comma</value>
+                        <value xml:lang="de">Cedille → Komma</value>
+                        <value xml:lang="ro">Sedilă → Virgulă</value>
                     </prop>
                     <prop oor:name="Target" oor:type="xs:string">
                         <value>_self</value>
@@ -198,12 +198,12 @@
                         <value>com.sun.star.text.TextDocument</value>
                     </prop>
                     <prop oor:name="URL" oor:type="xs:string">
-                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
+                        <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
                     </prop>
                     <prop oor:name="Title" oor:type="xs:string">
-                        <value xml:lang="en">Cedilla below → Comma bellow</value>
-                        <value xml:lang="de">Cedille darunter → Komma darunter</value>
-                        <value xml:lang="ro">Sedilă dedesubt → Virgulă dedesubt</value>
+                        <value xml:lang="en">Comma → Cedilla</value>
+                        <value xml:lang="de">Komma → Cedille</value>
+                        <value xml:lang="ro">Virgulă → Sedilă</value>
                     </prop>
                     <prop oor:name="Target" oor:type="xs:string">
                         <value>_self</value>
@@ -253,12 +253,12 @@
                     <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
                 </prop>
                 <prop oor:name="URL" oor:type="xs:string">
-                    <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
+                    <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
                 </prop>
                 <prop oor:name="Title" oor:type="xs:string">
-                    <value xml:lang="en">Replace Comma bellow with Cedilla below</value>
-                    <value xml:lang="de">Komma darunter durch Cedille darunter ersetzen</value>
-                    <value xml:lang="ro">Înlocuiește virgulele dedesubt cu sedile dedesubt</value>
+                    <value xml:lang="en">Replace Cedilla below with Comma bellow</value>
+                    <value xml:lang="de">Cedille darunter durch Komma darunter ersetzen</value>
+                    <value xml:lang="ro">Înlocuiește sedilele dedesubt cu virgule dedesubt</value>
                 </prop>
                 <prop oor:name="Target" oor:type="xs:string">
                     <value>_self</value>
@@ -270,12 +270,12 @@
                     <value>com.sun.star.text.TextDocument,,,com.sun.star.script.BasicIDE</value>
                 </prop>
                 <prop oor:name="URL" oor:type="xs:string">
-                    <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceCedilla2Comma?language=Basic&amp;location=application</value>
+                    <value>vnd.sun.star.script:LibraryDiacritics.module_diacritics_xchange.ReplaceComma2Cedilla?language=Basic&amp;location=application</value>
                 </prop>
                 <prop oor:name="Title" oor:type="xs:string">
-                    <value xml:lang="en">Replace Cedilla below with Comma bellow</value>
-                    <value xml:lang="de">Cedille darunter durch Komma darunter ersetzen</value>
-                    <value xml:lang="ro">Înlocuiește sedilele dedesubt cu virgule dedesubt</value>
+                    <value xml:lang="en">Replace Comma bellow with Cedilla below</value>
+                    <value xml:lang="de">Komma darunter durch Cedille darunter ersetzen</value>
+                    <value xml:lang="ro">Înlocuiește virgulele dedesubt cu sedile dedesubt</value>
                 </prop>
                 <prop oor:name="Target" oor:type="xs:string">
                     <value>_self</value>

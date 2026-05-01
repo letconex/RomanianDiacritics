@@ -2,7 +2,7 @@
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="module_diacritics_insert" script:language="StarBasic">
 
-sub Insertabreve
+Sub Insertabreve
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -11,9 +11,9 @@ sub Insertabreve
   args1(0).Name = "Text"
   args1(0).Value = "ă"
  dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub InsertAcapsbreve
+Sub InsertAcapsbreve
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -22,9 +22,9 @@ sub InsertAcapsbreve
   args1(0).Name = "Text"
   args1(0).Value = "Ă"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub Insertacircumflex
+Sub Insertacircumflex
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -33,9 +33,9 @@ sub Insertacircumflex
   args1(0).Name = "Text"
   args1(0).Value = "â"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub InsertAcapscircumflex
+Sub InsertAcapscircumflex
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -44,9 +44,9 @@ sub InsertAcapscircumflex
   args1(0).Name = "Text"
   args1(0).Value = "Â"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub Inserticircumflex
+Sub Inserticircumflex
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -55,9 +55,9 @@ sub Inserticircumflex
   args1(0).Name = "Text"
   args1(0).Value = "î"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub InsertIcapscircumflex
+Sub InsertIcapscircumflex
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -66,9 +66,9 @@ sub InsertIcapscircumflex
   args1(0).Name = "Text"
   args1(0).Value = "Î"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub Insertscommabelow
+Sub Insertscommabelow
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -77,9 +77,9 @@ sub Insertscommabelow
   args1(0).Name = "Text"
   args1(0).Value = "ș"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub InsertScapscommabelow
+Sub InsertScapscommabelow
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -88,9 +88,9 @@ sub InsertScapscommabelow
   args1(0).Name = "Text"
   args1(0).Value = "Ș"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub Inserttcommabelow
+Sub Inserttcommabelow
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -99,9 +99,9 @@ sub Inserttcommabelow
   args1(0).Name = "Text"
   args1(0).Value = "ț"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
-sub InsertTcapscommabelow
+Sub InsertTcapscommabelow
   dim document   as object
   dim dispatcher as object
   document   = ThisComponent.CurrentController.Frame
@@ -110,6 +110,6 @@ sub InsertTcapscommabelow
   args1(0).Name = "Text"
   args1(0).Value = "Ț"
   dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args1())
-end sub
+End Sub
 
 </script:module>

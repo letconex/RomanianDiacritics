@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LibraryDiacritics"
+    "\\icons",
+    "\\LibraryDiacritics",
+    "\\META-INF",
+    "\\Office",
+    "\\Office\\UI"
   ],
-  "SelectedNode": "\\LibraryDiacritics\\module_diacritics_xchange.xba",
+  "SelectedNode": "\\Addons.xcu",
   "PreviewInSolutionExplorer": false
 }

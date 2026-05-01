@@ -1,0 +1,17 @@
+vbCr → Carriage Return only (Chr(13))
+vbLf → Line Feed only (Chr(10))
+vbNewLine → Same as vbCrLf in Windows
+
+MB_OK	0	Display OK button only.
+MB_ICONSTOP	16	Add the Stop icon to the dialog.
+MB_ICONQUESTION	32	Add the Question icon to the dialog.
+MB_ICONEXCLAMATION	48	Add the Exclamation Point icon to the dialog.
+MB_ICONINFORMATION	64	Add the Information icon to the dialog.
+
+Dim dynArray(0) As String  ' Declare a dynamic array
+ReDim dynArray(0)          ' Start with an empty array
+ReDim Preserve dynArray(Index) ' Increase array upper bound while preserving contents
+" -> &quot;
+' -> &apos;
+& -> &amp;
+Use + for string concatenation or escape with &amp;
